@@ -1,0 +1,29 @@
+#include<stdio.h>
+#define PI 3.14159
+
+double get_area(double);
+
+int main(void)
+{
+    double radius;
+
+    /*Putting input*/
+    printf("Enter radius:");
+    scanf("%lf", &radius);
+
+    get_area(radius);
+
+    return 0;
+}
+
+double get_area(double radius)
+
+{
+    double area;
+
+    /*Function operation*/
+    area = PI * radius * radius;
+
+    printf("Area:%.3f\n", area);
+    return area;
+}

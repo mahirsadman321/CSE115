@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main(void)
+{
+    double marks;
+    printf("Enter marks:");
+    scanf("%lf", &marks);
+
+    if(marks > 90)
+    {
+        printf("\nGrade: A\n");
+    }
+    else if (marks >= 50)
+    {
+        printf("\nGrade: B\n");
+    }
+    else
+    {
+        printf("\nGrade:C\n");
+    }
+
+    return 0;
+}

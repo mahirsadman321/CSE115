@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main(void)
+
+{
+    float ang1, ang2, ang3;
+
+    //Getting Input
+    printf("Enter the angle 1:");
+    scanf("%f", &ang1);
+
+    printf("Enter the angle 2:");
+    scanf("%f", &ang2);
+
+    printf("Enter the angle 3:");
+    scanf("%f", &ang3);
+
+    //Using if-else to check the condition
+    if(ang1 + ang2 + ang3 == 180)  //Doing Operations
+    {
+        printf("Triangle is valid.");
+    }
+    else
+    {
+        printf("Triangle is not valid.");
+    }
+
+    return 0;
+}

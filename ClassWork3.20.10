@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main(void)
+{
+    char choice;
+
+     printf("Enter your colour choice:");
+    scanf("%c",&choice);
+
+    switch(choice)
+    {
+    case 'r':
+        printf("You selected red");
+        break;
+    case 'g':
+        printf("You selected green");
+        break;
+    case 'b':
+        printf("You selected blue");
+        break;
+    default:
+        printf("Invalid Colour");
+    }
+    return 0;
+}

@@ -1,0 +1,36 @@
+#include<stdio.h>
+#define PI 3.14159
+
+double CalArea(double r);
+
+int main(void)
+{
+    //Defining variebles
+    double area, r;
+    printf("Enter Radius:");
+    scanf("%lf", &r);
+
+    area = CalArea(r);
+
+    printf("\nArea= %.3f\n", area);
+
+    if(r>20)
+    {
+        printf("\nThe circle is large.\n");
+    }
+    else if(r>=10||r<=20)
+    {
+        printf("\nThe circle is medium.\n");
+    }
+    else
+    {
+        printf("\nThe circle is small.\n");
+    }
+    return 0;
+}
+
+double CalArea(double r)
+{
+    double area = PI*r*r;
+    return area;
+}

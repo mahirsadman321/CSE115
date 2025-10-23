@@ -1,0 +1,50 @@
+include<stdio.h>
+#include<math.h>
+
+double Calcsquare(double, double);
+
+double CalcCube(double , double);
+
+
+int main(void)
+{
+    //Declaring Variables//
+    double num1, num2;
+    double square, cube;
+
+    /*
+    *Getting inputs
+    *both num(num1,num2)
+    */
+    printf("Enter number 1:");
+    scanf("%lf", &num1);
+    
+    printf("Enter number 2:");
+    scanf("%lf", &num2);
+    
+    //Calling 1st function//
+    square=Calcsquare(num1, square);
+
+    printf("\nSquare of the num1ber1:%.3f\n", square);
+
+    //Calling 2nd function//
+    cube=CalcCube(num2, cube);
+
+    printf("\nCube of the num1ber2:%.3f\n", cube);
+
+
+    return 0;
+}
+
+ //Declaring 1st function//
+double Calcsquare(double num1, double square)
+{
+    square=pow((num1),2);
+    return square;
+}
+ //Declaring 2nd function//
+double CalcCube(double num2, double cube)
+{
+    cube=pow((num2),3);
+    return cube;
+}

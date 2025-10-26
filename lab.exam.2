@@ -1,0 +1,48 @@
+#include<stdio.h>
+#define PI 3.14159
+
+double getArea1(double R1);
+double getArea2(double R2);
+double getSize(double R1, double R2);
+
+int main(void)
+{
+    double area1, area2, R1, R2;
+
+    printf("Enter value of R1:");
+    scanf("%lf", &R1);
+
+    printf("Enter value of R2:");
+    scanf("%lf", &R2);
+
+    area1 = getArea1(R1);
+    area2 = getArea2(R2);
+
+
+    if(area1 > area2)
+    {
+        printf("Cicle2 is a sub-circle of circle1");
+    }
+    else if(area2 > area1)
+    {
+        printf("Cicle1 is a sub-circle of circle2");
+    }
+    else
+    {
+        printf("No sub_circle exists.");
+    }
+
+
+    return 0;
+}
+
+double getArea1(double R1)
+{
+    double area1 = PI * R1 * R1;
+    return area1;
+}
+double getArea2(double R2)
+{
+    double area2 = PI * R2 * R2;
+    return area2;
+}
